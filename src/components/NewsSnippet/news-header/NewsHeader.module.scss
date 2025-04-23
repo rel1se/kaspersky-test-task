@@ -1,0 +1,87 @@
+@use '../../../styles/variables.scss' as *;
+
+.meta-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+
+  .ant-typography {
+    font-size: 16px !important;
+  }
+
+  .meta-date {
+    .meta-date-number {
+      color: $text-white;
+      font-weight: 500;
+    }
+
+    .meta-date-rest {
+      color: $secondary-gray;
+    }
+  }
+
+  .meta-reach {
+    .meta-reach-number {
+      color: $text-white;
+      font-weight: 500;
+    }
+
+    .meta-reach-rest {
+      color: $secondary-gray;
+    }
+  }
+
+  .meta-traffic {
+    color: $secondary-gray;
+    font-size: 14px;
+
+    .meta-traffic-value {
+      color: $secondary-gray;
+    }
+
+    .meta-traffic-percent {
+      color: $text-white;
+      font-weight: 500;
+    }
+  }
+
+  .meta-sentiment {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .meta-sentiment--positive {
+    background-color: #52c41a;
+  }
+
+  .meta-sentiment--negative {
+    background-color: #fa541c;
+  }
+
+  .meta-sentiment--neutral {
+    background-color: #2f54eb;
+  }
+
+  .meta-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      font-size: 20px;
+      color: $secondary-gray;
+      cursor: pointer;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $hover-blue;
+      }
+    }
+  }
+}

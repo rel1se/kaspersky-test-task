@@ -1,0 +1,31 @@
+@use '../../../styles/variables.scss' as *;
+
+.subheader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  svg {
+    color: #888;
+  }
+
+  .domain-link {
+    color: $primary-blue;
+    font-size: 16px;
+
+    &:hover {
+      color: $hover-blue;
+    }
+  }
+
+  .flag-icon {
+    width: 16px;
+    height: 12px;
+  }
+
+  .sub-text {
+    color: $text-white;
+    font-size: 16px;
+  }
+}

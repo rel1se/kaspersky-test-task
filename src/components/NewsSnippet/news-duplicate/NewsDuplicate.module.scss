@@ -1,0 +1,80 @@
+@use '../../../styles/variables.scss' as *;
+
+.duplicate-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+  padding: 12px;
+  background-color: $dark-bg;
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  .dup-left {
+    max-width: 80%;
+
+    .dup-date,
+    .dup-reach {
+      display: inline-block;
+      font-size: 12px;
+      color: $light-gray;
+      margin-right: 12px;
+    }
+
+    .dup-title {
+      margin: 4px 0;
+      font-size: 20px;
+
+      a {
+        color: $primary-blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .dup-meta {
+      font-size: 14px;
+
+      .ant-typography {
+        color: $secondary-gray !important;
+      }
+
+      svg {
+        margin-right: 4px;
+        color: $secondary-gray;
+      }
+
+      .flag-icon {
+        width: 16px;
+        height: 12px;
+        margin: 0 4px;
+        border: 1px solid #555;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .dup-meta-text {
+    color: $secondary-gray;
+  }
+
+  .dup-actions {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 8px;
+
+    svg {
+      font-size: 20px;
+      color: $secondary-gray;
+      cursor: pointer;
+
+      &:hover {
+        color: $hover-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../../styles/variables.scss' as *;
+
+.body {
+  color: $text-white !important;
+  font-size: 18px;
+  line-height: 1.6;
+  max-height: 4.8em;
+  overflow: hidden;
+
+  &.expanded {
+    max-height: none;
+  }
+
+  strong {
+    color: $primary-blue !important;
+  }
+}
+
+.show-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: $primary-blue;
+  cursor: pointer;
+  margin-bottom: 12px;
+}

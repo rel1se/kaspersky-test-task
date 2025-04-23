@@ -1,0 +1,103 @@
+@use '../../styles/variables.scss' as *;
+
+.news-snippet {
+  background: linear-gradient(135deg, #2f275c 0%, #0f0f0f 30%);
+  border-radius: 12px;
+  padding: 20px;
+  color: $text-white;
+  width: 80%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+  .header {
+
+    .title-link {
+      a {
+        color: $primary-blue;
+        font-size: 24px;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+
+  .show-all-tags {
+    display: inline-block;
+    margin: 4px 0 12px;
+    font-size: 12px;
+    color: $primary-blue;
+    cursor: pointer;
+  }
+
+  .original-source {
+    margin: 24px 0;
+  }
+
+  .original-source-button {
+    width: auto;
+    display: inline-block;
+    background-color: $button-bg;
+    color: $primary-blue;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      background-color: $button-bg-hover;
+    }
+  }
+
+
+  .duplicates-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: $text-white;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+
+  .duplicates-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .duplicates-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $text-white;
+    margin: 0;
+  }
+
+  .filter-button {
+    padding: 0;
+    font-size: 16px;
+    color: $secondary-gray;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: auto;
+
+    &:hover {
+      color: $primary-blue;
+      background: transparent;
+    }
+  }
+
+
+  .view-duplicates {
+    margin-top: 8px;
+    background-color: $dark-bg;
+    color: $text-white;
+    height: 48px;
+    border: 1px solid #444;
+    width: 100%;
+  }
+}

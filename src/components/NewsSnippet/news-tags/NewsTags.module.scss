@@ -1,0 +1,27 @@
+@use '../../../styles/variables.scss' as *;
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0;
+
+  .pill-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: $tag-bg; // было #2a2a2a
+    padding: 4px 8px;
+    border-radius: 16px;
+    font-size: 14px;
+    color: $secondary-gray;
+
+    .tag-icon {
+      font-size: 12px;
+    }
+
+    .tag-count {
+      font-weight: 600;
+    }
+  }
+}
